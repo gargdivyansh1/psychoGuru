@@ -1,0 +1,30 @@
+.ai_container_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    box-sizing: border-box;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.ai_image_photo{
+    width: 92%;
+    height: 100%;
+    border-radius: 4rem;
+    position: relative;
+}
+
+.ai_link_photo{
+    position: absolute;
+    font-family: "Ubuntu Sans", serif;
+    font-weight: 600;
+    bottom: 2.5rem;
+    font-size: 1.25rem;
+    left: 15.25rem;
+}
+
+.to_ai{
+    cursor: pointer;
+}

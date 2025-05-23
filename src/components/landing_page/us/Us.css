@@ -1,0 +1,44 @@
+.us_container{
+    position: relative;
+    height: 75vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    gap: 0.5rem;
+    margin-bottom: 0;
+}
+
+.us_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ai-generated-8612993_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.06; 
+}
+
+.us_heading{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Ubuntu Sans", serif;
+}
+
+.us_content{
+    font-size: 1.1rem;
+    font-size: 300;
+    font-family: "Ubuntu Sans", serif;
+}
+
+.who_we_are_link{
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+

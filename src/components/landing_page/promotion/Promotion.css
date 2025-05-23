@@ -1,0 +1,13 @@
+.promotion_container{
+    height: 45rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.prmotion_heading{
+    font-size: 5rem;
+}
