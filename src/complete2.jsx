@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from './components/navbar/Navbar.jsx'
+import NavBar from './components/navbar/NavBar.jsx'
 import Therapies from './components/therapies/Therapies.jsx'
 Therapies
 
