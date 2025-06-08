@@ -6,10 +6,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close menu when clicking anywhere outside
   const closeMenu = () => setIsOpen(false);
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,9 +47,10 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-black text-white shadow-lg sticky top-0 z-40">
+    <nav className="bg-black text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+        
           {/* Logo Section */}
           <motion.div
             className="flex items-center"
@@ -60,7 +59,7 @@ function NavBar() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex-shrink-0 flex items-center">
-              <span className="pb-1 text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+              <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
                 PsychoGuru
               </span>
             </div>
@@ -79,7 +78,7 @@ function NavBar() {
                   whileHover="hover"
                 >
                   <Link
-                    to={`/${item.toLowerCase().replace(' ', '-')}`}
+                    to={`/${item.toLowerCase()}`}
                     className="px-3 py-2 rounded-md font-medium hover:bg-gray-800 hover:text-purple-300 transition-colors duration-300"
                   >
                     {item}
@@ -136,9 +135,9 @@ function NavBar() {
               aria-expanded={isOpen}
             >
               {isOpen ? (
-                <FiX className="block h-6 w-6" />
+                <FiX className="block h-4 w-4" />
               ) : (
-                <FiMenu className="block h-6 w-6" />
+                <FiMenu className="block h-4 w-4" />
               )}
             </button>
           </motion.div>
@@ -170,7 +169,7 @@ function NavBar() {
                   className="mb-2"
                 >
                   <Link
-                    to={`/${item.toLowerCase().replace(' ', '-')}`}
+                    to={`/${item.toLowerCase()}`}
                     className="block px-4 py-3 rounded-lg text-lg font-medium text-white hover:bg-gray-800 transition-colors"
                     onClick={closeMenu}
                   >
