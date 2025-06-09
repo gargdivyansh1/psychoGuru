@@ -1,6 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
 
 const collaborators = [
@@ -158,7 +157,7 @@ function Footer() {
                     <div className="max-w-7xl mx-auto px-6 py-12 md:px-8 lg:px-12">
                         {/* Upper Footer */}
                         <div className="p-2 flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
-                            <div className="p-2 text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">PsychoGuru</div>
+                            <div className="p-2 text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">PsychoGuru</div>
                             <div className="flex flex-col sm:flex-row gap-4 cursor-pointer">
                                 <Link
                                     to="/playstore"
@@ -227,7 +226,7 @@ function Footer() {
                             <div className="space-y-3">
                                 <Link to="/news" className="block text-white font-semibold mb-2">NewsLetter</Link>
                                 {['Blogs', 'Research Paper', 'White Papers', 'Articles', 'Case Studies'].map((item) => (
-                                    <Link key={item} to="/NavBar" className="block text-gray-400 hover:text-white transition">{item}</Link>
+                                    <Link key={item} to = {`/news/${item.toLowerCase().replace(' ','-')}`} className="block text-gray-400 hover:text-white transition">{item}</Link>
                                 ))}
                             </div>
                         </div>
