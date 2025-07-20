@@ -78,7 +78,7 @@ Your go-to resource for trusted mental health content, featuring:
 | AI Services  | NLP for chat, Emotion.AI for emotion tracking |
 | Database     | MongoDB / PostgreSQL                 |
 | Auth         | Clerk / Firebase                     |
-| Deployment   | Vercel / Streamlit / Render          |
+| Deployment   | Vercel / Streamlit / Render (soon)         |
 
 ---
 
